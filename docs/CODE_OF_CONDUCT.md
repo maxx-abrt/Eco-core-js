@@ -1,6 +1,19 @@
-# Code of Conduct
+# 💙 Code of Conduct
 
-## Our Pledge
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](../LICENSE)
+[![Eco-Friendly](https://img.shields.io/badge/Eco-Friendly-brightgreen)]()
+[![Inclusive](https://img.shields.io/badge/Inclusive-Community-blue)]()
+
+<div align="center">
+
+[💎 Our Pledge](#our-pledge) • 
+[📌 Our Standards](#our-standards) • 
+[🏷️ Enforcement](#enforcement-responsibilities) • 
+[👥 Scope](#scope)
+
+</div>
+
+## 💎 Our Pledge
 
 We as members, contributors, and leaders pledge to make participation in our
 community a harassment-free experience for everyone, regardless of age, body
@@ -12,10 +25,15 @@ and orientation.
 We pledge to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
 
-## Our Standards
+## 📌 Our Standards
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+<table>
+<tr>
+<td width="50%">
+
+### Positive Behaviors 👍
+
+Examples of behavior that contributes to a positive environment for our community include:
 
 * Demonstrating empathy and kindness toward other people
 * Being respectful of differing opinions, viewpoints, and experiences
@@ -24,6 +42,11 @@ community include:
   and learning from the experience
 * Focusing on what is best not just for us as individuals, but for the
   overall community
+
+</td>
+<td width="50%">
+
+### Unacceptable Behaviors 👎
 
 Examples of unacceptable behavior include:
 
@@ -36,7 +59,11 @@ Examples of unacceptable behavior include:
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
-## Enforcement Responsibilities
+</td>
+</tr>
+</table>
+
+## 🏷️ Enforcement Responsibilities
 
 Community leaders are responsible for clarifying and enforcing our standards of
 acceptable behavior and will take appropriate and fair corrective action in
