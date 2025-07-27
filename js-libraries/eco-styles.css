@@ -1,0 +1,124 @@
+/**
+ * eco-styles.css
+ * Sustainable CSS optimizations for reduced carbon footprint
+ * Version: 1.0.0
+ * License: MIT
+ */
+
+/* Base optimizations */
+:root {
+  /* System fonts to avoid loading web fonts */
+  --eco-font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  --eco-font-mono: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  
+  /* Default color palette */
+  --eco-color-text: #333333;
+  --eco-color-background: #ffffff;
+  --eco-color-primary: #007559;
+  --eco-color-secondary: #4ca38a;
+  --eco-color-accent: #ff7d45;
+  
+  /* Dark mode variables (reduces energy on OLED screens) */
+  --eco-dark-text: #e0e0e0;
+  --eco-dark-background: #121212;
+  --eco-dark-primary: #4db899;
+  --eco-dark-secondary: #2f8d71;
+  --eco-dark-accent: #ff9d65;
+}
+
+/* Apply system fonts by default */
+body {
+  font-family: var(--eco-font-sans);
+}
+
+code, pre {
+  font-family: var(--eco-font-mono);
+}
+
+/* Dark mode styles */
+.eco-dark-mode {
+  --eco-color-text: var(--eco-dark-text);
+  --eco-color-background: var(--eco-dark-background);
+  --eco-color-primary: var(--eco-dark-primary);
+  --eco-color-secondary: var(--eco-dark-secondary);
+  --eco-color-accent: var(--eco-dark-accent);
+}
+
+body.eco-dark-mode,
+.eco-dark-mode body {
+  color: var(--eco-dark-text);
+  background-color: var(--eco-dark-background);
+}
+
+/* Reduced motion optimizations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Applied when user has reduced motion preference or when eco-core.js adds this class */
+.eco-reduced-motion *,
+.eco-optimize-animations * {
+  animation-duration: 0.001s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001s !important;
+}
+
+/* Styles for eco-optimized images */
+[data-eco-optimized] {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sustainable helpers */
+.eco-sustainable-bg {
+  background-image: none !important;
+  background-color: var(--eco-color-background);
+}
+
+/* Helper for lazy-loaded images */
+[data-src] {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+[data-src][src] {
+  opacity: 1;
+}
+
+/* Print styles to save ink */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  a, a:visited {
+    text-decoration: underline;
+  }
+  
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
